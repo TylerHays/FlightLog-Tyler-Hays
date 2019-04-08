@@ -1,0 +1,357 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F3786713225C0DEC00EDFB97 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3786712225C0DEC00EDFB97 /* AppDelegate.m */; };
+		F3786716225C0DEC00EDFB97 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3786715225C0DEC00EDFB97 /* ViewController.m */; };
+		F3786719225C0DEC00EDFB97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3786717225C0DEC00EDFB97 /* Main.storyboard */; };
+		F378671C225C0DEC00EDFB97 /* FlightLog_Tyler_Hays.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F378671A225C0DEC00EDFB97 /* FlightLog_Tyler_Hays.xcdatamodeld */; };
+		F378671E225C0DED00EDFB97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F378671D225C0DED00EDFB97 /* Assets.xcassets */; };
+		F3786721225C0DED00EDFB97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F378671F225C0DED00EDFB97 /* LaunchScreen.storyboard */; };
+		F3786724225C0DED00EDFB97 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3786723225C0DED00EDFB97 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F378670E225C0DEC00EDFB97 /* FlightLog-Tyler-Hays.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FlightLog-Tyler-Hays.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3786711225C0DEC00EDFB97 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F3786712225C0DEC00EDFB97 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F3786714225C0DEC00EDFB97 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F3786715225C0DEC00EDFB97 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F3786718225C0DEC00EDFB97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F378671B225C0DEC00EDFB97 /* FlightLog_Tyler_Hays.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FlightLog_Tyler_Hays.xcdatamodel; sourceTree = "<group>"; };
+		F378671D225C0DED00EDFB97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3786720225C0DED00EDFB97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F3786722225C0DED00EDFB97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3786723225C0DED00EDFB97 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F378670B225C0DEC00EDFB97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F3786705225C0DEC00EDFB97 = {
+			isa = PBXGroup;
+			children = (
+				F3786710225C0DEC00EDFB97 /* FlightLog-Tyler-Hays */,
+				F378670F225C0DEC00EDFB97 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F378670F225C0DEC00EDFB97 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F378670E225C0DEC00EDFB97 /* FlightLog-Tyler-Hays.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3786710225C0DEC00EDFB97 /* FlightLog-Tyler-Hays */ = {
+			isa = PBXGroup;
+			children = (
+				F3786711225C0DEC00EDFB97 /* AppDelegate.h */,
+				F3786712225C0DEC00EDFB97 /* AppDelegate.m */,
+				F3786714225C0DEC00EDFB97 /* ViewController.h */,
+				F3786715225C0DEC00EDFB97 /* ViewController.m */,
+				F3786717225C0DEC00EDFB97 /* Main.storyboard */,
+				F378671D225C0DED00EDFB97 /* Assets.xcassets */,
+				F378671F225C0DED00EDFB97 /* LaunchScreen.storyboard */,
+				F3786722225C0DED00EDFB97 /* Info.plist */,
+				F3786723225C0DED00EDFB97 /* main.m */,
+				F378671A225C0DEC00EDFB97 /* FlightLog_Tyler_Hays.xcdatamodeld */,
+			);
+			path = "FlightLog-Tyler-Hays";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F378670D225C0DEC00EDFB97 /* FlightLog-Tyler-Hays */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3786727225C0DED00EDFB97 /* Build configuration list for PBXNativeTarget "FlightLog-Tyler-Hays" */;
+			buildPhases = (
+				F378670A225C0DEC00EDFB97 /* Sources */,
+				F378670B225C0DEC00EDFB97 /* Frameworks */,
+				F378670C225C0DEC00EDFB97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FlightLog-Tyler-Hays";
+			productName = "FlightLog-Tyler-Hays";
+			productReference = F378670E225C0DEC00EDFB97 /* FlightLog-Tyler-Hays.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3786706225C0DEC00EDFB97 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Tyler Hays";
+				TargetAttributes = {
+					F378670D225C0DEC00EDFB97 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = F3786709225C0DEC00EDFB97 /* Build configuration list for PBXProject "FlightLog-Tyler-Hays" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F3786705225C0DEC00EDFB97;
+			productRefGroup = F378670F225C0DEC00EDFB97 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F378670D225C0DEC00EDFB97 /* FlightLog-Tyler-Hays */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F378670C225C0DEC00EDFB97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3786721225C0DED00EDFB97 /* LaunchScreen.storyboard in Resources */,
+				F378671E225C0DED00EDFB97 /* Assets.xcassets in Resources */,
+				F3786719225C0DEC00EDFB97 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F378670A225C0DEC00EDFB97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F378671C225C0DEC00EDFB97 /* FlightLog_Tyler_Hays.xcdatamodeld in Sources */,
+				F3786716225C0DEC00EDFB97 /* ViewController.m in Sources */,
+				F3786724225C0DED00EDFB97 /* main.m in Sources */,
+				F3786713225C0DEC00EDFB97 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F3786717225C0DEC00EDFB97 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3786718225C0DEC00EDFB97 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F378671F225C0DED00EDFB97 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3786720225C0DED00EDFB97 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F3786725225C0DED00EDFB97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F3786726225C0DED00EDFB97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3786728225C0DED00EDFB97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "FlightLog-Tyler-Hays/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "TylerHays.FlightLog-Tyler-Hays";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F3786729225C0DED00EDFB97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "FlightLog-Tyler-Hays/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "TylerHays.FlightLog-Tyler-Hays";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3786709225C0DEC00EDFB97 /* Build configuration list for PBXProject "FlightLog-Tyler-Hays" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3786725225C0DED00EDFB97 /* Debug */,
+				F3786726225C0DED00EDFB97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3786727225C0DED00EDFB97 /* Build configuration list for PBXNativeTarget "FlightLog-Tyler-Hays" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3786728225C0DED00EDFB97 /* Debug */,
+				F3786729225C0DED00EDFB97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F378671A225C0DEC00EDFB97 /* FlightLog_Tyler_Hays.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F378671B225C0DEC00EDFB97 /* FlightLog_Tyler_Hays.xcdatamodel */,
+			);
+			currentVersion = F378671B225C0DEC00EDFB97 /* FlightLog_Tyler_Hays.xcdatamodel */;
+			path = FlightLog_Tyler_Hays.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F3786706225C0DEC00EDFB97 /* Project object */;
+}
