@@ -1,24 +1,214 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FOL-aI-wWd">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Flight Log-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="FlightLogViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Nvb-Ro-lQI">
+                                <rect key="frame" x="0.0" y="88" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="A6i-GW-WZd"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="n6m-xs-GR5">
+                                <rect key="frame" x="0.0" y="144" width="414" height="718"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FlightCell" rowHeight="88" id="7D7-ZB-LaV">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="88"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7D7-ZB-LaV" id="mDk-NS-nKp">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="87.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rzy-Yd-lcA">
+                                                    <rect key="frame" x="20" y="33" width="42" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Flight Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkP-SC-GnX">
+                                                    <rect key="frame" x="226" y="32" width="90" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nmp-RO-3oe">
+                                                    <rect key="frame" x="324" y="33" width="42" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XeF-pW-YHP">
+                                                    <rect key="frame" x="20" y="56" width="42" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="PTZ-tL-RM1"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="VGF-dM-4WX"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="n6m-xs-GR5" secondAttribute="bottom" id="3Fl-fN-gOW"/>
+                            <constraint firstItem="Nvb-Ro-lQI" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Kwa-iu-a1Y"/>
+                            <constraint firstItem="n6m-xs-GR5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MsJ-qZ-ivn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="n6m-xs-GR5" secondAttribute="trailing" id="OhC-lZ-E19"/>
+                            <constraint firstItem="Nvb-Ro-lQI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hGQ-vH-ffq"/>
+                            <constraint firstItem="Nvb-Ro-lQI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tQs-hF-D9g"/>
+                            <constraint firstItem="n6m-xs-GR5" firstAttribute="top" secondItem="Nvb-Ro-lQI" secondAttribute="bottom" id="u7v-9y-R7h"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Flight Log" id="K54-Ug-Ccg">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="VNP-H5-rJc">
+                            <connections>
+                                <segue destination="lMP-CF-QSC" kind="show" id="mg8-ux-cvN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="searchBar" destination="Nvb-Ro-lQI" id="sQ6-pE-T0h"/>
+                        <outlet property="tableView" destination="n6m-xs-GR5" id="w9O-ma-b6m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="118.52678571428571"/>
+        </scene>
+        <!--Add New Flight View Controller-->
+        <scene sceneID="DHi-8U-aGL">
+            <objects>
+                <viewController id="lMP-CF-QSC" customClass="AddNewFlightViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FET-ap-JKD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flight Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Erq-Dt-Dxp">
+                                <rect key="frame" x="20" y="297" width="83" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aircraft Identifier" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1t-1v-EjU">
+                                <rect key="frame" x="20" y="156" width="129" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f8T-A6-nQU">
+                                <rect key="frame" x="20" y="185" width="374" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flight Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EEv-0L-fbd">
+                                <rect key="frame" x="20" y="247" width="85" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eNi-BS-4PF">
+                                <rect key="frame" x="20" y="276" width="374" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="lMP-CF-QSC" id="OU1-l5-K5l"/>
+                                </connections>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XZy-5E-pqO">
+                                <rect key="frame" x="0.0" y="367" width="414" height="162"/>
+                                <date key="date" timeIntervalSinceReferenceDate="576471987.31471395">
+                                    <!--2019-04-09 03:06:27 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GwV-tH-sCD">
+                                <rect key="frame" x="184" y="809" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="saveFlightClicked:" destination="lMP-CF-QSC" eventType="touchUpInside" id="bUX-1N-f1s"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ujh-XJ-Sy1" firstAttribute="trailing" secondItem="f8T-A6-nQU" secondAttribute="trailing" constant="20" id="1KE-Ca-IhV"/>
+                            <constraint firstItem="Erq-Dt-Dxp" firstAttribute="leading" secondItem="eNi-BS-4PF" secondAttribute="leading" id="4sE-20-f41"/>
+                            <constraint firstItem="Erq-Dt-Dxp" firstAttribute="leading" secondItem="EEv-0L-fbd" secondAttribute="leading" id="9Or-yc-Q6Y"/>
+                            <constraint firstItem="eNi-BS-4PF" firstAttribute="width" secondItem="f8T-A6-nQU" secondAttribute="width" id="AL6-iY-ZJF"/>
+                            <constraint firstItem="XZy-5E-pqO" firstAttribute="leading" secondItem="ujh-XJ-Sy1" secondAttribute="leading" id="CQw-dQ-KSW"/>
+                            <constraint firstItem="ujh-XJ-Sy1" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="d1t-1v-EjU" secondAttribute="trailing" symbolic="YES" id="H1y-oh-5G3"/>
+                            <constraint firstItem="d1t-1v-EjU" firstAttribute="leading" secondItem="ujh-XJ-Sy1" secondAttribute="leading" constant="20" id="LC4-aL-hGc"/>
+                            <constraint firstItem="XZy-5E-pqO" firstAttribute="trailing" secondItem="ujh-XJ-Sy1" secondAttribute="trailing" id="LVa-TL-f4r"/>
+                            <constraint firstItem="f8T-A6-nQU" firstAttribute="top" secondItem="d1t-1v-EjU" secondAttribute="bottom" constant="8" id="Wk7-yt-tJz"/>
+                            <constraint firstItem="XZy-5E-pqO" firstAttribute="centerY" secondItem="FET-ap-JKD" secondAttribute="centerY" id="Xjd-SE-1tm"/>
+                            <constraint firstItem="d1t-1v-EjU" firstAttribute="top" secondItem="ujh-XJ-Sy1" secondAttribute="top" constant="68" id="czC-4s-QuS"/>
+                            <constraint firstItem="f8T-A6-nQU" firstAttribute="leading" secondItem="ujh-XJ-Sy1" secondAttribute="leading" constant="20" id="dVn-py-2V1"/>
+                            <constraint firstItem="eNi-BS-4PF" firstAttribute="leading" secondItem="f8T-A6-nQU" secondAttribute="leading" id="eGE-6u-FAJ"/>
+                            <constraint firstItem="eNi-BS-4PF" firstAttribute="top" secondItem="EEv-0L-fbd" secondAttribute="bottom" constant="8" id="ej3-f4-n33"/>
+                            <constraint firstItem="ujh-XJ-Sy1" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="EEv-0L-fbd" secondAttribute="trailing" symbolic="YES" id="erC-Dd-Uyf"/>
+                            <constraint firstItem="ujh-XJ-Sy1" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Erq-Dt-Dxp" secondAttribute="trailing" symbolic="YES" id="gXY-T3-v6J"/>
+                            <constraint firstItem="XZy-5E-pqO" firstAttribute="top" secondItem="Erq-Dt-Dxp" secondAttribute="bottom" constant="49" id="lPq-Jx-LXl"/>
+                            <constraint firstItem="ujh-XJ-Sy1" firstAttribute="bottom" secondItem="XZy-5E-pqO" secondAttribute="bottom" constant="333" id="tUs-js-tfc"/>
+                            <constraint firstItem="EEv-0L-fbd" firstAttribute="top" secondItem="f8T-A6-nQU" secondAttribute="bottom" constant="32" id="wIJ-eW-lT8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ujh-XJ-Sy1"/>
+                    </view>
+                    <connections>
+                        <outlet property="airCraftTextField" destination="f8T-A6-nQU" id="myP-Rm-C6Q"/>
+                        <outlet property="datePicker" destination="XZy-5E-pqO" id="cM1-Oy-7Id"/>
+                        <outlet property="flightTimeTextField" destination="eNi-BS-4PF" id="KtI-t8-27N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ChB-v6-XjL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2250.7246376811595" y="-168.08035714285714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="72Z-a5-fHs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FOL-aI-wWd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="I8w-Jy-1Xn">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="wiJ-q9-xtL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iFm-VV-s9Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="763.39285714285711"/>
         </scene>
     </scenes>
 </document>

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  AddNewFlightViewController.h
 //  FlightLog-Tyler-Hays
 //
 //  Created by Tyler Hays on 4/8/19.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface AddNewFlightViewController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END

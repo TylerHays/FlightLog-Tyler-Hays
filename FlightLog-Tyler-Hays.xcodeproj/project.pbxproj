@@ -7,27 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D0976630BBE12D537699FE8 /* libPods-FlightLog-Tyler-Hays.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D996F809012680F4C01E2C /* libPods-FlightLog-Tyler-Hays.a */; };
 		F3786713225C0DEC00EDFB97 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3786712225C0DEC00EDFB97 /* AppDelegate.m */; };
-		F3786716225C0DEC00EDFB97 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3786715225C0DEC00EDFB97 /* ViewController.m */; };
+		F3786716225C0DEC00EDFB97 /* FlightLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3786715225C0DEC00EDFB97 /* FlightLogViewController.m */; };
 		F3786719225C0DEC00EDFB97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3786717225C0DEC00EDFB97 /* Main.storyboard */; };
 		F378671C225C0DEC00EDFB97 /* FlightLog_Tyler_Hays.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F378671A225C0DEC00EDFB97 /* FlightLog_Tyler_Hays.xcdatamodeld */; };
 		F378671E225C0DED00EDFB97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F378671D225C0DED00EDFB97 /* Assets.xcassets */; };
 		F3786721225C0DED00EDFB97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F378671F225C0DED00EDFB97 /* LaunchScreen.storyboard */; };
 		F3786724225C0DED00EDFB97 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3786723225C0DED00EDFB97 /* main.m */; };
+		F3B987BC225C147400F2EC7B /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B987B6225C147400F2EC7B /* DBManager.m */; };
+		F3B987BD225C147400F2EC7B /* GenericDao.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B987B9225C147400F2EC7B /* GenericDao.m */; };
+		F3B987BE225C147400F2EC7B /* DBUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B987BA225C147400F2EC7B /* DBUtility.m */; };
+		F3B987C4225C14AB00F2EC7B /* NSDictionary+NilChecks.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B987C0225C14AB00F2EC7B /* NSDictionary+NilChecks.m */; };
+		F3B987C5225C14AB00F2EC7B /* app.db in Resources */ = {isa = PBXBuildFile; fileRef = F3B987C3225C14AB00F2EC7B /* app.db */; };
+		F3B987C9225C152500F2EC7B /* FlightLog.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B987C8225C152500F2EC7B /* FlightLog.m */; };
+		F3B987CF225C294B00F2EC7B /* FlightLogQueries.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B987CE225C294B00F2EC7B /* FlightLogQueries.m */; };
+		F3B987D2225C461000F2EC7B /* AddNewFlightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B987D1225C461000F2EC7B /* AddNewFlightViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C8C511787CEAD91F675A99F /* Pods-FlightLog-Tyler-Hays.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlightLog-Tyler-Hays.debug.xcconfig"; path = "Target Support Files/Pods-FlightLog-Tyler-Hays/Pods-FlightLog-Tyler-Hays.debug.xcconfig"; sourceTree = "<group>"; };
+		A4D996F809012680F4C01E2C /* libPods-FlightLog-Tyler-Hays.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FlightLog-Tyler-Hays.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC2589623B54FD4B1599C88E /* Pods-FlightLog-Tyler-Hays.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlightLog-Tyler-Hays.release.xcconfig"; path = "Target Support Files/Pods-FlightLog-Tyler-Hays/Pods-FlightLog-Tyler-Hays.release.xcconfig"; sourceTree = "<group>"; };
 		F378670E225C0DEC00EDFB97 /* FlightLog-Tyler-Hays.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FlightLog-Tyler-Hays.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3786711225C0DEC00EDFB97 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F3786712225C0DEC00EDFB97 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F3786714225C0DEC00EDFB97 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F3786715225C0DEC00EDFB97 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F3786714225C0DEC00EDFB97 /* FlightLogViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlightLogViewController.h; sourceTree = "<group>"; };
+		F3786715225C0DEC00EDFB97 /* FlightLogViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlightLogViewController.m; sourceTree = "<group>"; };
 		F3786718225C0DEC00EDFB97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F378671B225C0DEC00EDFB97 /* FlightLog_Tyler_Hays.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FlightLog_Tyler_Hays.xcdatamodel; sourceTree = "<group>"; };
 		F378671D225C0DED00EDFB97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3786720225C0DED00EDFB97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3786722225C0DED00EDFB97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3786723225C0DED00EDFB97 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F3B987B6225C147400F2EC7B /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		F3B987B7225C147400F2EC7B /* GenericDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericDao.h; sourceTree = "<group>"; };
+		F3B987B8225C147400F2EC7B /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		F3B987B9225C147400F2EC7B /* GenericDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenericDao.m; sourceTree = "<group>"; };
+		F3B987BA225C147400F2EC7B /* DBUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBUtility.m; sourceTree = "<group>"; };
+		F3B987BB225C147400F2EC7B /* DBUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBUtility.h; sourceTree = "<group>"; };
+		F3B987C0225C14AB00F2EC7B /* NSDictionary+NilChecks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+NilChecks.m"; sourceTree = "<group>"; };
+		F3B987C1225C14AB00F2EC7B /* NSDictionary+NilChecks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+NilChecks.h"; sourceTree = "<group>"; };
+		F3B987C3225C14AB00F2EC7B /* app.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = app.db; sourceTree = "<group>"; };
+		F3B987C7225C152500F2EC7B /* FlightLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlightLog.h; sourceTree = "<group>"; };
+		F3B987C8225C152500F2EC7B /* FlightLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlightLog.m; sourceTree = "<group>"; };
+		F3B987CD225C294B00F2EC7B /* FlightLogQueries.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlightLogQueries.h; sourceTree = "<group>"; };
+		F3B987CE225C294B00F2EC7B /* FlightLogQueries.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlightLogQueries.m; sourceTree = "<group>"; };
+		F3B987D0225C461000F2EC7B /* AddNewFlightViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddNewFlightViewController.h; sourceTree = "<group>"; };
+		F3B987D1225C461000F2EC7B /* AddNewFlightViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddNewFlightViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +62,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D0976630BBE12D537699FE8 /* libPods-FlightLog-Tyler-Hays.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		98C120B4564E07A74E7B56F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C8C511787CEAD91F675A99F /* Pods-FlightLog-Tyler-Hays.debug.xcconfig */,
+				BC2589623B54FD4B1599C88E /* Pods-FlightLog-Tyler-Hays.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		99C0A70C2C059E5041EF180A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4D996F809012680F4C01E2C /* libPods-FlightLog-Tyler-Hays.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F3786705225C0DEC00EDFB97 = {
 			isa = PBXGroup;
 			children = (
 				F3786710225C0DEC00EDFB97 /* FlightLog-Tyler-Hays */,
 				F378670F225C0DEC00EDFB97 /* Products */,
+				98C120B4564E07A74E7B56F7 /* Pods */,
+				99C0A70C2C059E5041EF180A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,10 +107,18 @@
 		F3786710225C0DEC00EDFB97 /* FlightLog-Tyler-Hays */ = {
 			isa = PBXGroup;
 			children = (
+				F3B987CC225C293A00F2EC7B /* Queries */,
+				F3B987C6225C152500F2EC7B /* Bussiness Objects */,
+				F3B987BF225C14AB00F2EC7B /* Categories */,
+				F3B987C2225C14AB00F2EC7B /* Resource */,
+				F3B987B5225C142700F2EC7B /* DB Items */,
 				F3786711225C0DEC00EDFB97 /* AppDelegate.h */,
 				F3786712225C0DEC00EDFB97 /* AppDelegate.m */,
-				F3786714225C0DEC00EDFB97 /* ViewController.h */,
-				F3786715225C0DEC00EDFB97 /* ViewController.m */,
+				F3B987CA225C152D00F2EC7B /* Queries */,
+				F3786714225C0DEC00EDFB97 /* FlightLogViewController.h */,
+				F3B987D0225C461000F2EC7B /* AddNewFlightViewController.h */,
+				F3B987D1225C461000F2EC7B /* AddNewFlightViewController.m */,
+				F3786715225C0DEC00EDFB97 /* FlightLogViewController.m */,
 				F3786717225C0DEC00EDFB97 /* Main.storyboard */,
 				F378671D225C0DED00EDFB97 /* Assets.xcassets */,
 				F378671F225C0DED00EDFB97 /* LaunchScreen.storyboard */,
@@ -74,6 +129,61 @@
 			path = "FlightLog-Tyler-Hays";
 			sourceTree = "<group>";
 		};
+		F3B987B5225C142700F2EC7B /* DB Items */ = {
+			isa = PBXGroup;
+			children = (
+				F3B987B8225C147400F2EC7B /* DBManager.h */,
+				F3B987B6225C147400F2EC7B /* DBManager.m */,
+				F3B987BB225C147400F2EC7B /* DBUtility.h */,
+				F3B987BA225C147400F2EC7B /* DBUtility.m */,
+				F3B987B7225C147400F2EC7B /* GenericDao.h */,
+				F3B987B9225C147400F2EC7B /* GenericDao.m */,
+			);
+			path = "DB Items";
+			sourceTree = "<group>";
+		};
+		F3B987BF225C14AB00F2EC7B /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				F3B987C0225C14AB00F2EC7B /* NSDictionary+NilChecks.m */,
+				F3B987C1225C14AB00F2EC7B /* NSDictionary+NilChecks.h */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		F3B987C2225C14AB00F2EC7B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F3B987C3225C14AB00F2EC7B /* app.db */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		F3B987C6225C152500F2EC7B /* Bussiness Objects */ = {
+			isa = PBXGroup;
+			children = (
+				F3B987C7225C152500F2EC7B /* FlightLog.h */,
+				F3B987C8225C152500F2EC7B /* FlightLog.m */,
+			);
+			path = "Bussiness Objects";
+			sourceTree = "<group>";
+		};
+		F3B987CA225C152D00F2EC7B /* Queries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Queries;
+			sourceTree = "<group>";
+		};
+		F3B987CC225C293A00F2EC7B /* Queries */ = {
+			isa = PBXGroup;
+			children = (
+				F3B987CD225C294B00F2EC7B /* FlightLogQueries.h */,
+				F3B987CE225C294B00F2EC7B /* FlightLogQueries.m */,
+			);
+			path = Queries;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -81,6 +191,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F3786727225C0DED00EDFB97 /* Build configuration list for PBXNativeTarget "FlightLog-Tyler-Hays" */;
 			buildPhases = (
+				A20C69DD83E818F729AC5AF8 /* [CP] Check Pods Manifest.lock */,
 				F378670A225C0DEC00EDFB97 /* Sources */,
 				F378670B225C0DEC00EDFB97 /* Frameworks */,
 				F378670C225C0DEC00EDFB97 /* Resources */,
@@ -134,20 +245,53 @@
 				F3786721225C0DED00EDFB97 /* LaunchScreen.storyboard in Resources */,
 				F378671E225C0DED00EDFB97 /* Assets.xcassets in Resources */,
 				F3786719225C0DEC00EDFB97 /* Main.storyboard in Resources */,
+				F3B987C5225C14AB00F2EC7B /* app.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A20C69DD83E818F729AC5AF8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlightLog-Tyler-Hays-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F378670A225C0DEC00EDFB97 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3B987BE225C147400F2EC7B /* DBUtility.m in Sources */,
+				F3B987C4225C14AB00F2EC7B /* NSDictionary+NilChecks.m in Sources */,
 				F378671C225C0DEC00EDFB97 /* FlightLog_Tyler_Hays.xcdatamodeld in Sources */,
-				F3786716225C0DEC00EDFB97 /* ViewController.m in Sources */,
+				F3B987C9225C152500F2EC7B /* FlightLog.m in Sources */,
+				F3786716225C0DEC00EDFB97 /* FlightLogViewController.m in Sources */,
+				F3B987D2225C461000F2EC7B /* AddNewFlightViewController.m in Sources */,
+				F3B987CF225C294B00F2EC7B /* FlightLogQueries.m in Sources */,
+				F3B987BD225C147400F2EC7B /* GenericDao.m in Sources */,
 				F3786724225C0DED00EDFB97 /* main.m in Sources */,
 				F3786713225C0DEC00EDFB97 /* AppDelegate.m in Sources */,
+				F3B987BC225C147400F2EC7B /* DBManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +431,7 @@
 		};
 		F3786728225C0DED00EDFB97 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C8C511787CEAD91F675A99F /* Pods-FlightLog-Tyler-Hays.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -303,6 +448,7 @@
 		};
 		F3786729225C0DED00EDFB97 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC2589623B54FD4B1599C88E /* Pods-FlightLog-Tyler-Hays.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
