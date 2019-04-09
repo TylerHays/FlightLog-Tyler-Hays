@@ -11,7 +11,6 @@
 		F3786713225C0DEC00EDFB97 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3786712225C0DEC00EDFB97 /* AppDelegate.m */; };
 		F3786716225C0DEC00EDFB97 /* FlightLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3786715225C0DEC00EDFB97 /* FlightLogViewController.m */; };
 		F3786719225C0DEC00EDFB97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3786717225C0DEC00EDFB97 /* Main.storyboard */; };
-		F378671C225C0DEC00EDFB97 /* FlightLog_Tyler_Hays.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F378671A225C0DEC00EDFB97 /* FlightLog_Tyler_Hays.xcdatamodeld */; };
 		F378671E225C0DED00EDFB97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F378671D225C0DED00EDFB97 /* Assets.xcassets */; };
 		F3786721225C0DED00EDFB97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F378671F225C0DED00EDFB97 /* LaunchScreen.storyboard */; };
 		F3786724225C0DED00EDFB97 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3786723225C0DED00EDFB97 /* main.m */; };
@@ -23,6 +22,7 @@
 		F3B987C9225C152500F2EC7B /* FlightLog.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B987C8225C152500F2EC7B /* FlightLog.m */; };
 		F3B987CF225C294B00F2EC7B /* FlightLogQueries.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B987CE225C294B00F2EC7B /* FlightLogQueries.m */; };
 		F3B987D2225C461000F2EC7B /* AddNewFlightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B987D1225C461000F2EC7B /* AddNewFlightViewController.m */; };
+		F3B987DF225CC63900F2EC7B /* FlightLogTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B987DE225CC63900F2EC7B /* FlightLogTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +35,6 @@
 		F3786714225C0DEC00EDFB97 /* FlightLogViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlightLogViewController.h; sourceTree = "<group>"; };
 		F3786715225C0DEC00EDFB97 /* FlightLogViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlightLogViewController.m; sourceTree = "<group>"; };
 		F3786718225C0DEC00EDFB97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F378671B225C0DEC00EDFB97 /* FlightLog_Tyler_Hays.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FlightLog_Tyler_Hays.xcdatamodel; sourceTree = "<group>"; };
 		F378671D225C0DED00EDFB97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3786720225C0DED00EDFB97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3786722225C0DED00EDFB97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +54,8 @@
 		F3B987CE225C294B00F2EC7B /* FlightLogQueries.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlightLogQueries.m; sourceTree = "<group>"; };
 		F3B987D0225C461000F2EC7B /* AddNewFlightViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddNewFlightViewController.h; sourceTree = "<group>"; };
 		F3B987D1225C461000F2EC7B /* AddNewFlightViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddNewFlightViewController.m; sourceTree = "<group>"; };
+		F3B987DD225CC63900F2EC7B /* FlightLogTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlightLogTableViewCell.h; sourceTree = "<group>"; };
+		F3B987DE225CC63900F2EC7B /* FlightLogTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlightLogTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +114,7 @@
 				F3B987C2225C14AB00F2EC7B /* Resource */,
 				F3B987B5225C142700F2EC7B /* DB Items */,
 				F3786711225C0DEC00EDFB97 /* AppDelegate.h */,
+				F3B987D9225CC5B300F2EC7B /* TableViewCells */,
 				F3786712225C0DEC00EDFB97 /* AppDelegate.m */,
 				F3B987CA225C152D00F2EC7B /* Queries */,
 				F3786714225C0DEC00EDFB97 /* FlightLogViewController.h */,
@@ -124,7 +126,6 @@
 				F378671F225C0DED00EDFB97 /* LaunchScreen.storyboard */,
 				F3786722225C0DED00EDFB97 /* Info.plist */,
 				F3786723225C0DED00EDFB97 /* main.m */,
-				F378671A225C0DEC00EDFB97 /* FlightLog_Tyler_Hays.xcdatamodeld */,
 			);
 			path = "FlightLog-Tyler-Hays";
 			sourceTree = "<group>";
@@ -182,6 +183,15 @@
 				F3B987CE225C294B00F2EC7B /* FlightLogQueries.m */,
 			);
 			path = Queries;
+			sourceTree = "<group>";
+		};
+		F3B987D9225CC5B300F2EC7B /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				F3B987DD225CC63900F2EC7B /* FlightLogTableViewCell.h */,
+				F3B987DE225CC63900F2EC7B /* FlightLogTableViewCell.m */,
+			);
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,10 +293,10 @@
 			files = (
 				F3B987BE225C147400F2EC7B /* DBUtility.m in Sources */,
 				F3B987C4225C14AB00F2EC7B /* NSDictionary+NilChecks.m in Sources */,
-				F378671C225C0DEC00EDFB97 /* FlightLog_Tyler_Hays.xcdatamodeld in Sources */,
 				F3B987C9225C152500F2EC7B /* FlightLog.m in Sources */,
 				F3786716225C0DEC00EDFB97 /* FlightLogViewController.m in Sources */,
 				F3B987D2225C461000F2EC7B /* AddNewFlightViewController.m in Sources */,
+				F3B987DF225CC63900F2EC7B /* FlightLogTableViewCell.m in Sources */,
 				F3B987CF225C294B00F2EC7B /* FlightLogQueries.m in Sources */,
 				F3B987BD225C147400F2EC7B /* GenericDao.m in Sources */,
 				F3786724225C0DED00EDFB97 /* main.m in Sources */,
@@ -485,19 +495,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		F378671A225C0DEC00EDFB97 /* FlightLog_Tyler_Hays.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				F378671B225C0DEC00EDFB97 /* FlightLog_Tyler_Hays.xcdatamodel */,
-			);
-			currentVersion = F378671B225C0DEC00EDFB97 /* FlightLog_Tyler_Hays.xcdatamodel */;
-			path = FlightLog_Tyler_Hays.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = F3786706225C0DEC00EDFB97 /* Project object */;
 }
