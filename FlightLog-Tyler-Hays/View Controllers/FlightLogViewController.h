@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 @class FlightLog;
 
-@interface FlightLogViewController : UIViewController <UITableViewDataSource>
+@interface FlightLogViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) NSMutableArray<FlightLog *> *flightLogs;
 

@@ -461,7 +461,7 @@ NSString * const IdString = @"ID";
         
         // NSInvalidArgumentException
         if ([type isEqualToString: @"i"]) {  // integer
-            [object setValue:[NSNumber numberWithInt:[row getIntValueForKey:columnMask]] forKey:column];
+            [object setValue:[NSNumber numberWithLong:[row getIntValueForKey:columnMask]] forKey:column];
         }
         else if ([type isEqualToString: @"f"]) {  // float
             @try {
