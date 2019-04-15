@@ -25,7 +25,6 @@
 		F3B987DF225CC63900F2EC7B /* FlightLogTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B987DE225CC63900F2EC7B /* FlightLogTableViewCell.m */; };
 		F3EF58E5225D625E0010FE44 /* ReplaceCurrentViewSeque.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EF58E4225D625E0010FE44 /* ReplaceCurrentViewSeque.m */; };
 		F3EF58E92260CC880010FE44 /* FlightViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EF58E82260CC880010FE44 /* FlightViewViewController.m */; };
-		F3EF58EC2260DBEA0010FE44 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EF58EB2260DBEA0010FE44 /* Utility.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,8 +62,6 @@
 		F3EF58E4225D625E0010FE44 /* ReplaceCurrentViewSeque.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReplaceCurrentViewSeque.m; sourceTree = "<group>"; };
 		F3EF58E72260CC880010FE44 /* FlightViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlightViewViewController.h; sourceTree = "<group>"; };
 		F3EF58E82260CC880010FE44 /* FlightViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlightViewViewController.m; sourceTree = "<group>"; };
-		F3EF58EA2260DBEA0010FE44 /* Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
-		F3EF58EB2260DBEA0010FE44 /* Utility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,8 +195,6 @@
 			children = (
 				F3EF58E3225D625E0010FE44 /* ReplaceCurrentViewSeque.h */,
 				F3EF58E4225D625E0010FE44 /* ReplaceCurrentViewSeque.m */,
-				F3EF58EA2260DBEA0010FE44 /* Utility.h */,
-				F3EF58EB2260DBEA0010FE44 /* Utility.m */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -318,7 +313,6 @@
 				F3B987C4225C14AB00F2EC7B /* NSDictionary+NilChecks.m in Sources */,
 				F3B987C9225C152500F2EC7B /* FlightLog.m in Sources */,
 				F3EF58E92260CC880010FE44 /* FlightViewViewController.m in Sources */,
-				F3EF58EC2260DBEA0010FE44 /* Utility.m in Sources */,
 				F3786716225C0DEC00EDFB97 /* FlightLogViewController.m in Sources */,
 				F3B987D2225C461000F2EC7B /* EditFlightViewController.m in Sources */,
 				F3B987DF225CC63900F2EC7B /* FlightLogTableViewCell.m in Sources */,

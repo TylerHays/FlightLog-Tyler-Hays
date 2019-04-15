@@ -24,7 +24,8 @@
 
 - (void)setupCellwithFlightLog:(FlightLog *)flightLog {
     self.aircraftLabel.text = flightLog.airCraftIdentifier;
-    self.flightTimeLabel.text = [NSString stringWithFormat:@"%.2f hours", flightLog.flightTime ];
+    self.flightTimeLabel.text = [NSString stringWithFormat:@"%.2f hours", flightLog.flightTime ];\
+    self.flightDateLabel.text = [flightLog flightDateWithMonthDayYear];
     
 }
 

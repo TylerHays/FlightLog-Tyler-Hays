@@ -17,6 +17,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readwrite) double flightTime;
 @property (nonatomic, strong, nonatomic) NSString *flightDate;
 
+- (void)setFlightDateFromDate:(NSDate *)date;
+- (NSDate *)getDateFromFlightDate;
+- (NSString *)flightDateWithMonthDayYear;
+
 @end
 
 NS_ASSUME_NONNULL_END

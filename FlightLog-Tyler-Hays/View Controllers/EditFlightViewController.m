@@ -31,6 +31,8 @@
     } else {
         [self setupViewWithFligtLog:self.flightLog];
     }
+    self.airCraftTextField.autocapitalizationType = UITextAutocapitalizationTypeAllCharacters;
+  //  self.flightTimeTextField.num
 }
 
 /*
@@ -50,46 +52,53 @@
 -(void)setupViewWithFligtLog:(FlightLog *)flightLog {
     [self.airCraftTextField setText:flightLog.airCraftIdentifier];
     
-    NSString *flightTime =  [NSString stringWithFormat:@"%f hours", flightLog.flightTime ];
-    
-     
-   // [self.flightTimeTextField text] = flightLog.flightTime
+    NSString *flightTime =  [NSString stringWithFormat:@"%g hours", flightLog.flightTime ];
+    [self flightTimeTextField].text = flightTime;
+    [self.datePicker setDate:[flightLog getDateFromFlightDate]];
 }
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    
+    if (textField == self.airCraftTextField) {
+        [self aircraftTextField:textField shouldChangeCharactersInRange:range replacementString:string];
+    }
     NSString *newString = [textField.text stringByReplacingCharactersInRange:range withString:string];
     NSArray  *arrayOfString = [newString componentsSeparatedByString:@"."];
     
     if ([arrayOfString count] > 2) {
         return NO;
     }
-    if (![self isNumeric:newString]){
+    if (![self isNumeric:string]){
         return NO;
     }
     
     return YES;
 }
 
+- (BOOL)aircraftTextField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    return true;
+}
+
 - (BOOL)isNumeric:(NSString *)input {
     for (int i = 0; i < [input length]; i++) {
         char c = [input characterAtIndex:i];
         // Allow a leading '-' for negative integers
-        if ((c >= '0' && c <= '9') || c=='.') {
-            return YES;
+        if (!((c >= '0' && c <= '9') || c=='.')) {
+            return NO;
         }
     }
-    return NO;
+    return YES;
 }
 
 
 - (IBAction)saveFlightClicked:(id)sender {
-    NSDateFormatter *dateFormater = [[NSDateFormatter alloc] init];
-    [dateFormater setDateFormat:@"yyyy/mm/dd"];
+    
+    //TODO: Add error checker
     FlightLog *flight = self.flightLog;
+    NSString *flightTimeText = [self flightTimeTextField].text;
     flight.airCraftIdentifier = self.airCraftTextField.text;
-    flight.flightTime = 3;
-    NSDate *date = self.datePicker.date;
-    flight.flightDate = [dateFormater stringFromDate:date];
+    flight.flightTime = [flightTimeText doubleValue];
+    [flight setFlightDateFromDate:[self datePicker].date];
     [FlightLogQueries createOrUpdateFlightLog:flight];
     [self.navigationController popViewControllerAnimated:YES];
 }
