@@ -21,13 +21,12 @@
 }
 
 + (void)deleteFlightLog:(FlightLog *)flightLog {
-    //TODO: Remove all photos
     [GenericDao removeObject:flightLog];
 }
 
 + (NSArray *)getAllFlights {
-    return [GenericDao readEntireListOfObject:[FlightLog class]];
+    NSString *orderByClause = @"FlightDate DESC";
+    return [GenericDao readEntireListOfObject:[FlightLog class] WithOrderByClause:orderByClause];
 }
-
 
 @end

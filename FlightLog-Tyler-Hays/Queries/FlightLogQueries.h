@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (FlightLog *)getFlightLogById:(NSInteger)dbId;
 + (NSInteger)createOrUpdateFlightLog:(FlightLog *)flightLog;
 + (NSArray *)getAllFlights;
-+ (void)deleteFlightLog:(FlightLog *)flightLog 
-;@end
++ (void)deleteFlightLog:(FlightLog *)flightLog;
+@end
 
 NS_ASSUME_NONNULL_END

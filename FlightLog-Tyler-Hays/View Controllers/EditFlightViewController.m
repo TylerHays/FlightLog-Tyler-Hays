@@ -11,6 +11,7 @@
 #import "DBUtility.h"
 #import "FlightLog.h"
 #import "FlightLogQueries.h"
+#import "Utility.h"
 
 @interface EditFlightViewController ()<UITextViewDelegate>
 @property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
@@ -32,18 +33,7 @@
         [self setupViewWithFligtLog:self.flightLog];
     }
     self.airCraftTextField.autocapitalizationType = UITextAutocapitalizationTypeAllCharacters;
-  //  self.flightTimeTextField.num
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 -(void)setupWithFlightLog:(FlightLog *)flightLog {
     self.flightLog = flightLog;
@@ -52,15 +42,20 @@
 -(void)setupViewWithFligtLog:(FlightLog *)flightLog {
     [self.airCraftTextField setText:flightLog.airCraftIdentifier];
     
-    NSString *flightTime =  [NSString stringWithFormat:@"%g hours", flightLog.flightTime ];
+    NSString *flightTime =  [Utility displayFlightHoursFormate:[self flightLog].flightTime];
     [self flightTimeTextField].text = flightTime;
     [self.datePicker setDate:[flightLog getDateFromFlightDate]];
 }
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
     
-    if (textField == self.airCraftTextField) {
-        [self aircraftTextField:textField shouldChangeCharactersInRange:range replacementString:string];
+    if([string isEqualToString:@"\n"]) {
+        [textField resignFirstResponder];
+        return false;
+    }
+    
+    if (textField != self.flightTimeTextField) {
+        return true;
     }
     NSString *newString = [textField.text stringByReplacingCharactersInRange:range withString:string];
     NSArray  *arrayOfString = [newString componentsSeparatedByString:@"."];
@@ -75,14 +70,9 @@
     return YES;
 }
 
-- (BOOL)aircraftTextField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
-    return true;
-}
-
 - (BOOL)isNumeric:(NSString *)input {
     for (int i = 0; i < [input length]; i++) {
         char c = [input characterAtIndex:i];
-        // Allow a leading '-' for negative integers
         if (!((c >= '0' && c <= '9') || c=='.')) {
             return NO;
         }
@@ -90,10 +80,7 @@
     return YES;
 }
 
-
 - (IBAction)saveFlightClicked:(id)sender {
-    
-    //TODO: Add error checker
     FlightLog *flight = self.flightLog;
     NSString *flightTimeText = [self flightTimeTextField].text;
     flight.airCraftIdentifier = self.airCraftTextField.text;

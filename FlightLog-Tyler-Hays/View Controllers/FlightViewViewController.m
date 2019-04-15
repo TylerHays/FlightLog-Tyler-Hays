@@ -10,6 +10,7 @@
 #import "FlightLog.h"
 #import "FlightLogQueries.h"
 #import "EditFlightViewController.h"
+#import "Utility.h"
 
 @interface FlightViewViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *deleteButton;
@@ -17,7 +18,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *aircraftLabel;
 @property (weak, nonatomic) IBOutlet UILabel *flightTimeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *flightDateLabel;
-
 
 @end
 
@@ -40,7 +40,8 @@
 
 - (void)setupView {
     self.aircraftLabel.text = [self flightLog].airCraftIdentifier;
-    self.flightTimeLabel.text = [NSString stringWithFormat:@"%f"  , [self flightLog].flightTime ];
+    NSString *flightTime = [Utility displayFlightHoursFormate:[self flightLog].flightTime];
+    self.flightTimeLabel.text = [NSString stringWithFormat: @"%@ hours", flightTime];
     self.flightDateLabel.text = [self flightLog].flightDate;
 }
 

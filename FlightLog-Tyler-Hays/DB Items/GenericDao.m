@@ -498,7 +498,6 @@ NSString * const IdString = @"ID";
             }
         }
     }
-    
     return object;
 }
 

@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (id)readObjectOfClass:(Class)objectClass withId:(long)dbId;
 + (id)readObjectOfClass:(Class)objectClass withWhereClause:(NSString *)whereClause andValueDictionary:(NSDictionary *)valueDict;
 + (NSArray *)readEntireListOfObject:(Class)objectClass;
++ (NSArray *)readEntireListOfObject:(Class)objectClass WithOrderByClause:(NSString *)orderByClause;
 + (NSArray *)readListOfObject:(Class)objectClass withWhereClause: (NSString *)whereClause;
 + (NSArray *)readListOfObject:(Class)objectClass withWhereClause: (NSString *)whereClause andWithOrderByClause: (NSString *) orderByClause andValueDictionary:(NSDictionary *)valueDictionary;
 + (NSArray *)readListOfObject:(Class)objectClass withWhereClause: (NSString *)whereClause andValueDictionary:(NSDictionary *)valueDict;

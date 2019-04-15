@@ -16,8 +16,6 @@
     if (str  == [NSNull null]) str = @"" ;
     
     // Changed to valueForKey and forced string conversion to prevent crashes when you force an int -> str.
-    // valueforKey wraps it into a NSNumber object, which you can convert like this.  ---jy.
-    
     return [NSString stringWithFormat:@"%@", str] ;
 }
 

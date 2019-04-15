@@ -8,6 +8,7 @@
 
 #import "FlightLogTableViewCell.h"
 #import "FlightLog.h"
+#import "Utility.h"
 
 @implementation FlightLogTableViewCell
 
@@ -23,8 +24,7 @@
 }
 
 - (void)setupCellwithFlightLog:(FlightLog *)flightLog {
-    self.aircraftLabel.text = flightLog.airCraftIdentifier;
-    self.flightTimeLabel.text = [NSString stringWithFormat:@"%.2f hours", flightLog.flightTime ];\
+    self.aircraftLabel.text = flightLog.airCraftIdentifier;    self.flightTimeLabel.text =[Utility displayFlightHoursFormate:flightLog.flightTime]; 
     self.flightDateLabel.text = [flightLog flightDateWithMonthDayYear];
     
 }
